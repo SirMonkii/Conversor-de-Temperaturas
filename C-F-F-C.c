@@ -38,7 +38,9 @@ int main(){
 			//Função Celsius para Fahrenheit
 				
 			case 1:
-					printf("\nInsira a temperatura em Celsius: "); 
+					printf("\e[1;1H\e[2J");
+					
+					printf("Insira a temperatura em Celsius: "); 
 					scanf("%f", &C);
 				
 					CF = C * 1.8 + 32;
@@ -50,7 +52,9 @@ int main(){
 			//Função Fahrenheit para Celsius
 			
 			case 2:
-					printf("\nInsira a temperatura em Fahrenheit: ");
+					printf("\e[1;1H\e[2J");
+					
+					printf("Insira a temperatura em Fahrenheit: ");
 					scanf("%f", &F);
 			
 					FC = (F - 32)/1.8;
@@ -65,7 +69,9 @@ int main(){
 				
 				//Imprimindo o segundo menu
 				
-				printf("\n\nPor favor, selecione o tipo de conversão que você deseja fazer:\n\n\n");
+				printf("\e[1;1H\e[2J");
+				
+				printf("Por favor, selecione o tipo de conversão que você deseja fazer:\n\n\n");
 				printf("1- Celsius para Kelvin\n");
 				printf("2- Fahrenheit para Kelvin\n");
 				printf("3- Kelvin para Celsius\n");
@@ -86,7 +92,9 @@ int main(){
 						//Função Celsius para Kelvin
 						
 						case '1':
-								printf("\nInsira a temperatura em Celsius: ");
+								printf("\e[1;1H\e[2J");
+							
+								printf("Insira a temperatura em Celsius: ");
 								scanf("%f", &C);
 						
 						
@@ -99,7 +107,9 @@ int main(){
 						//Função Fahrenheit para Kelvin
 							
 						case '2':
-								printf("\nInsira a temperatura em Fahrenheit: ");
+								printf("\e[1;1H\e[2J");
+							
+								printf("Insira a temperatura em Fahrenheit: ");
 								scanf("%f", &F);
 						
 								FK = (F - 32) * 5/9 + 273.15;
@@ -111,7 +121,9 @@ int main(){
 						//Função Kelvin para Celsius
 							
 						case '3':
-								printf("\nInsira a temperatura em Kelvin: ");
+								printf("\e[1;1H\e[2J");
+							
+								printf("Insira a temperatura em Kelvin: ");
 								scanf("%f", &K);
 						
 								KC = K - 273.15;
@@ -123,7 +135,9 @@ int main(){
 						//Função Kelvin para Fahrenheit
 							
 						case '4':
-								printf("\nInsira a temperatura em Kelvin: ");
+								printf("\e[1;1H\e[2J");
+							
+								printf("Insira a temperatura em Kelvin: ");
 								scanf("%f", &K);
 						
 								KF = (K - 273.15) * 1.8 + 32;
@@ -136,7 +150,9 @@ int main(){
 						//Impressão da mensagem de erro caso não insira uma opção válida
 				
 						if(!altCorreta){
-							printf("\nOpção inválida, por favor, tente novamente\n\n");	
+							printf("\e[1;1H\e[2J");
+							
+							printf("Opção inválida, por favor, tente novamente\n\n");	
 							}
 		
 				//Loop while definindo a condição com bool
@@ -145,7 +161,9 @@ int main(){
 			} 
 		
 				if(!altCorreta){
-					printf("\nOpção inválida, por favor, tente novamente\n\n");	
+					printf("\e[1;1H\e[2J");
+					
+					printf("Opção inválida, por favor, tente novamente\n\n");	
 					}
 	
 	}while(!altCorreta);
